@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #121212;
-  --bg-surface: #1a1a1a;
-  --accent-gold: #c5a059;
-  --accent-gold-hover: #e0b66a;
-  --text-primary: #ffffff;
-  --text-secondary: #a0a0a0;
-  --border-color: rgba(197, 160, 89, 0.2);
-  --glass-bg: rgba(26, 26, 26, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --bg-primary: #050a14;
+  --bg-secondary: #0a111f;
+  --bg-surface: #101a2d;
+  --accent-saffron: #ff9933;
+  --accent-gold: #d4af37;
+  --text-primary: #f8f9fa;
+  --text-secondary: #cbd5e0;
+  --border-color: rgba(255, 153, 51, 0.2);
+  --glass-bg: rgba(16, 26, 45, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --transition-smooth: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 * {
@@ -67,30 +67,36 @@ button {
 }
 
 .accent-text {
-  color: var(--accent-gold);
+  color: var(--accent-saffron);
 }
 
 .btn-primary {
-  background-color: var(--accent-gold);
-  color: var(--bg-primary);
-  padding: 1rem 2rem;
+  background-color: var(--accent-saffron);
+  color: #fff;
+  padding: 1.2rem 2.5rem;
   font-weight: 600;
   font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   transition: var(--transition-smooth);
-  border: 1px solid var(--accent-gold);
+  border: 1px solid var(--accent-saffron);
+  box-shadow: 0 4px 15px rgba(255, 153, 51, 0.2);
   
   &:hover {
     background-color: transparent;
-    color: var(--accent-gold);
+    color: var(--accent-saffron);
+    box-shadow: 0 8px 25px rgba(255, 153, 51, 0.3);
   }
 }
 
 .btn-outline {
   border: 1px solid var(--accent-gold);
   color: var(--accent-gold);
-  padding: 1rem 2rem;
+  padding: 1.2rem 2.5rem;
   font-weight: 600;
   font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   transition: var(--transition-smooth);
 
   &:hover {
